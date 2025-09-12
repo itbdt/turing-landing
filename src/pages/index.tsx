@@ -1,34 +1,31 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-/**
- * Página principal de la landing de Turing. Presenta el producto,
- * destaca sus características clave y ofrece un llamado a la acción.
- * Su estilo general se define en src/styles/globals.css.
- */
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Turing | Inteligencia de Negocios y Seguridad para Casinos</title>
+        <title>Bayes Data Technology | Inteligencia y Seguridad para Casinos</title>
         <meta
           name="description"
-          content="Turing ofrece inteligencia de negocios en tiempo real y seguridad avanzada para casinos modernos."
+          content="Bayes Data Technology ofrece soluciones de inteligencia de negocios y seguridad avanzadas para casinos."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       {/* Barra de navegación fija */}
       <header className="navbar">
-        {/* Contenedor del menú para darle bordes redondeados como en AiNest */}
         <div className="nav-container">
-          <div className="logo">Turing</div>
+          <div className="logo">Bayes Data Technology</div>
           <nav>
             <Link href="#" className="nav-link">
               Inicio
             </Link>
-            <Link href="#features" className="nav-link">
-              Características
+            <Link href="#services" className="nav-link">
+              Servicios
+            </Link>
+            <Link href="#product" className="nav-link">
+              Producto
             </Link>
             <Link href="#about" className="nav-link">
               Nosotros
@@ -38,69 +35,100 @@ export default function Home() {
             </Link>
           </nav>
           <Link href="#contact" className="nav-cta">
-            Empezar
+            Contáctanos
           </Link>
         </div>
       </header>
 
       <main>
-        {/* Sección Hero con llamada a la acción */}
+        {/* Sección Hero enfocada en la empresa */}
         <section className="hero">
-          <span className="badge">Inteligencia y seguridad impulsadas por IA</span>
+          <span className="badge">Soluciones de analítica y seguridad para casinos</span>
           <h1>
-            Operaciones de casino más inteligentes,{' '}
-            <span className="gradient-text">seguridad sin fricciones</span>
+            Transformando el sector del juego{' '}
+            <span className="gradient-text">con datos y confianza</span>
           </h1>
           <p className="subtitle">
-            Optimiza tu sala de juego con análisis en tiempo real y protege cada movimiento con seguridad avanzada.
+            En Bayes Data Technology combinamos inteligencia de negocios con seguridad de vanguardia
+            para que tu casino tome mejores decisiones y opere sin riesgos.
           </p>
           <div className="buttons">
-            <Link href="#contact" className="btn btn-primary">
-              Empezar
+            <Link href="#services" className="btn btn-primary">
+              Conoce nuestros servicios
             </Link>
-            <Link href="#features" className="btn btn-secondary">
-              Saber más
+            <Link href="#product" className="btn btn-secondary">
+              Ver nuestro producto
             </Link>
           </div>
         </section>
 
-        {/* Sección de Características */}
-        <section id="features" className="features">
-          <h2>Características</h2>
+        {/* Sección de Servicios */}
+        <section id="services" className="features">
+          <h2>Servicios</h2>
           <div className="feature-list">
             <div className="feature">
-              <h3>Analítica en tiempo real</h3>
+              <h3>Analítica y Datos</h3>
               <p>
-                Supervisa todos los aspectos de tu casino con paneles interactivos
-                e información basada en datos en tiempo real.
+                Construimos paneles personalizados y reportes en tiempo real para que entiendas cada
+                detalle de tu operación y aumentes la rentabilidad.
               </p>
             </div>
             <div className="feature">
-              <h3>Seguridad avanzada</h3>
+              <h3>Seguridad y Cumplimiento</h3>
               <p>
-                Protege tus activos con detección de fraudes impulsada por IA,
-                integración con vigilancia y supervisión continua del riesgo.
+                Implementamos sistemas de vigilancia y detección de fraudes basados en inteligencia
+                artificial para proteger tus activos y cumplir con la normativa.
               </p>
             </div>
             <div className="feature">
-              <h3>Integración sin problemas</h3>
+              <h3>Consultoría e Integración</h3>
               <p>
-                Conecta Turing fácilmente con sistemas de gestión existentes mediante
-                APIs modernas y conectores listos para usar.
+                Nuestro equipo integra nuestras soluciones con tus sistemas existentes y asesora en
+                la optimización de procesos para maximizar resultados.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Sección Nosotros / Acerca de */}
+        {/* Sección de Producto */}
+        <section id="product" className="features">
+          <h2>Turing: Nuestra Plataforma</h2>
+          <p>
+            Turing es nuestra plataforma insignia que reúce analítica avanzada y seguridad integral
+            en una única solución.
+          </p>
+          <div className="feature-list">
+            <div className="feature">
+              <h3>Monitorización Proactiva</h3>
+              <p>
+                Detecta patrones anómalos y riesgos potenciales antes de que se conviertan en
+                problemas gracias a algoritmos de aprendizaje automático.
+              </p>
+            </div>
+            <div className="feature">
+              <h3>Seguridad Integral</h3>
+              <p>
+                Combina vigilancia en tiempo real con análisis de comportamiento para reducir el
+                fraude y garantizar un entorno seguro.
+              </p>
+            </div>
+            <div className="feature">
+              <h3>Arquitectura Flexible</h3>
+              <p>
+                Diseñada para integrarse con tus sistemas actuales mediante API y adaptarse a
+                diferentes operaciones de casinos.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Sección Nosotros */}
         <section id="about" className="about">
           <h2>Nosotros</h2>
           <p>
-            Turing es un sistema en línea que combina una potente inteligencia de
-            negocios con seguridad de nivel empresarial diseñada para casinos.
-            Nuestra plataforma permite a los responsables tomar decisiones basadas
-            en información útil mientras protege las operaciones de amenazas,
-            asegurando una experiencia de juego fluida y segura.
+            En Bayes Data Technology somos un equipo de expertos en analítica de datos y seguridad
+            para casinos. Nuestro objetivo es ayudar a las empresas del sector a adoptar una cultura
+            basada en datos y a proteger sus operaciones frente a amenazas emergentes.
           </p>
         </section>
 
@@ -108,12 +136,11 @@ export default function Home() {
         <section id="contact" className="contact">
           <h2>Contáctanos</h2>
           <p>
-            ¿Listo para transformar las operaciones de tu casino? Comunícate con
-            nuestro equipo para descubrir cómo Turing puede ayudar a que tu
-            negocio prospere.
+            ¿Quieres saber cómo podemos ayudar a tu casino? Escríbenos y nuestro equipo te mostrará
+            cómo mejorar tu operación con nuestras soluciones y con Turing.
           </p>
           <a href="mailto:info@bayesdatatechnology.com" className="btn btn-primary">
-            Contactar ventas
+            Enviar correo
           </a>
         </section>
       </main>
